@@ -156,7 +156,7 @@ class _SurahIndexScreenState extends State<SurahIndexScreen> {
                     },
                     decoration: InputDecoration(
                       contentPadding: Space.h,
-                      hintText: 'Search Surah here...',
+                      hintText: 'Cari nama surah..',
                       hintStyle: AppText.b2!.copyWith(
                         color: AppTheme.c!.textSub2,
                       ),

@@ -78,7 +78,7 @@ class _JuzIndexScreenState extends State<JuzIndexScreen> {
                 },
                 decoration: InputDecoration(
                   contentPadding: Space.h,
-                  hintText: 'Search Juz Number here...',
+                  hintText: 'Cari juz...',
                   hintStyle: AppText.b2!.copyWith(
                     color: AppTheme.c!.textSub2,
                   ),
