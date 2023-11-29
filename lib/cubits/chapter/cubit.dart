@@ -1,10 +1,10 @@
-import 'dart:async';
+import 'dart:async'; //menggunakan fitur-fitur yang berkaitan dengan asynchronous programming seperti Future, Stream, dll.
 
-import 'package:dio/dio.dart';
+import 'package:dio/dio.dart'; // merupakan HTTP client untuk melakukan permintaan jaringan (HTTP requests).
 import 'package:flutter/material.dart';
-import 'package:equatable/equatable.dart';
+import 'package:equatable/equatable.dart'; //untuk mempermudah pembandingan objek.
 import 'package:hive_flutter/adapters.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart'; //untuk manajemen state
 import 'package:quranpulse/models/chapter/chapter.dart';
 
 part 'data_provider.dart';

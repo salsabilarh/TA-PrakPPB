@@ -1,9 +1,10 @@
 part of 'cubit.dart';
+//menggunakan Hive untuk menyimpan data lokal
 
-class BookmarksDataProvider {
-  static final cache = Hive.box('data');
+class BookmarksDataProvider { //mengelola akses dan manipulasi data bookmark dalam penyimpanan lokal menggunakan Hive. 
+  static final cache = Hive.box('data'); //Hive adalah sebuah database key-value yang digunakan untuk menyimpan data lokal di aplikasi Flutter.
 
-  static Future<List<Chapter?>?> fetch() async {
+  static Future<List<Chapter?>?> fetch() async { //Mengambil daftar bookmark dari penyimpanan lokal.
     try {
       List? bookmarks = await cache.get('bookmarks');
       if (bookmarks == null) {
@@ -18,7 +19,7 @@ class BookmarksDataProvider {
     }
   }
 
-  static Future<List<Chapter?>?> addBookmark(Chapter? chapter) async {
+  static Future<List<Chapter?>?> addBookmark(Chapter? chapter) async { //Menambahkan chapter ke daftar bookmark yang ada di penyimpanan lokal.
     try {
       List? bookmarks = await cache.get('bookmarks');
       if (bookmarks == null) {
@@ -36,7 +37,7 @@ class BookmarksDataProvider {
     }
   }
 
-  static Future<List<Chapter?>?> removeBookmark(Chapter? chapter) async {
+  static Future<List<Chapter?>?> removeBookmark(Chapter? chapter) async { //Menghapus chapter dari daftar bookmark yang ada di penyimpanan lokal.
     try {
       List bookmarks = await cache.get('bookmarks');
 
@@ -50,7 +51,7 @@ class BookmarksDataProvider {
     }
   }
 
-  static Future<bool?> checkBookmarked(Chapter? chapter) async {
+  static Future<bool?> checkBookmarked(Chapter? chapter) async { //Memeriksa apakah sebuah chapter sudah ditandai sebagai bookmark.
     try {
       List bookmarks = await cache.get('bookmarks');
 

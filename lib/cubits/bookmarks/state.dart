@@ -13,7 +13,7 @@ class BookmarkState extends Equatable {
   });
 
   @override
-  List<Object?> get props => [
+  List<Object?> get props => [ //untuk menentukan nilai-nilai apa yang digunakan sebagai kunci untuk membandingkan kesamaan antara state
         data,
         message,
         isBookmarked,
