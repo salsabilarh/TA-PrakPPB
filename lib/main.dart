@@ -5,7 +5,6 @@ import 'package:hive_flutter/adapters.dart';
 import 'package:provider/provider.dart';
 import 'package:url_strategy/url_strategy.dart';
 
-import 'package:quranpulse/app_routes.dart';
 import 'package:quranpulse/cubits/bookmarks/cubit.dart';
 import 'package:quranpulse/cubits/chapter/cubit.dart';
 import 'package:quranpulse/cubits/juz/cubit.dart';
@@ -91,14 +90,14 @@ class MaterialChild extends StatelessWidget {
           maxSlide: MediaQuery.of(context).size.width * 0.835,
         ),
       ),
-      initialRoute: AppRoutes.splash,
+      initialRoute: '/splash',
       routes: <String, WidgetBuilder>{
-        AppRoutes.juz: (context) => const JuzIndexScreen(),
-        AppRoutes.splash: (context) => const SplashScreen(),
-        AppRoutes.surah: (context) => const SurahIndexScreen(),
-        AppRoutes.bookmarks: (context) => const BookmarksScreen(),
-        AppRoutes.profile: (context) => const Profile(),
-        AppRoutes.home: (context) =>
+        '/juz': (context) => const JuzIndexScreen(),
+        '/splash': (context) => const SplashScreen(),
+        '/surah': (context) => const SurahIndexScreen(),
+        '/bookmarks': (context) => const BookmarksScreen(),
+        '/profile': (context) => const Profile(),
+        '/home': (context) =>
             HomeScreen(maxSlide: MediaQuery.of(context).size.width * 0.835),
       },
     );

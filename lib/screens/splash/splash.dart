@@ -1,5 +1,4 @@
 import 'package:quranpulse/animations/bottom_animation.dart';
-import 'package:quranpulse/app_routes.dart';
 import 'package:quranpulse/configs/configs.dart';
 import 'package:quranpulse/cubits/bookmarks/cubit.dart';
 import 'package:quranpulse/cubits/juz/cubit.dart';
@@ -43,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
       if (mounted) {
         Navigator.pushReplacementNamed(
           context,
-          AppRoutes.home,
+          '/home',
         );
       }
     });

@@ -1,27 +1,26 @@
-import 'package:quranpulse/app_routes.dart';
 import 'package:iconsax/iconsax.dart';
 
 class DrawerUtils {
   static const List items = [
     {
       'title': 'Juz Index',
-      'icon': Iconsax.note_1,
-      'route': AppRoutes.juz,
+      'icon': Iconsax.note_2,
+      'route': '/juz',
     },
     {
       'title': 'Surah Index',
-      'icon': Iconsax.sort,
-      'route': AppRoutes.surah,
+      'icon': Iconsax.note_1,
+      'route': '/surah',
     },
     {
       'title': 'Bookmarks',
-      'icon': Iconsax.book_1,
-      'route': AppRoutes.bookmarks,
+      'icon': Iconsax.bookmark,
+      'route': '/bookmarks',
     },
     {
       'title': 'Profile',
       'icon': Iconsax.profile_circle,
-      'route': AppRoutes.profile,
+      'route': '/profile',
     },
   ];
 }

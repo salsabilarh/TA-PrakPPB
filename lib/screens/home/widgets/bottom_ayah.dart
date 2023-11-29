@@ -12,7 +12,7 @@ class _AyahBottom extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
           Text(
-            "\"Indeed, It is We who sent down the Qur'an\nand indeed, We will be its Guardian\"",
+            "\"Al-Qur'an sebagai Petunjuk bagi Orang Bertakwa\"",
             textAlign: TextAlign.center,
             style: AppText.b2!.copyWith(
               color: AppTheme.c!.text,
@@ -20,7 +20,7 @@ class _AyahBottom extends StatelessWidget {
           ),
           Space.y!,
           Text(
-            "Qs. Surah Al-Hijr\n",
+            "Qs. Surah Al-Baqarah (1: 2)\n",
             style: AppText.l1!.copyWith(
               color: AppTheme.c!.text,
             ),

@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'dart:async';
 import 'dart:math' as math;
-import 'package:quranpulse/app_routes.dart';
 import 'package:quranpulse/configs/app.dart';
 import 'package:quranpulse/utils/drawer.dart';
 import 'package:quranpulse/widgets/button/app_button.dart';

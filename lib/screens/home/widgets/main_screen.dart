@@ -25,19 +25,19 @@ class _MainScreen extends StatelessWidget {
                   AppButton(
                     title: 'Juz Index',
                     onPressed: () =>
-                        Navigator.pushNamed(context, AppRoutes.juz),
+                        Navigator.pushNamed(context, '/juz'),
                   ),
                   Space.y1!,
                   AppButton(
                     title: 'Surah Index',
                     onPressed: () =>
-                        Navigator.pushNamed(context, AppRoutes.surah),
+                        Navigator.pushNamed(context, '/surah'),
                   ),
                   Space.y1!,
                   AppButton(
                     title: 'Bookmarks',
                     onPressed: () =>
-                        Navigator.pushNamed(context, AppRoutes.bookmarks),
+                        Navigator.pushNamed(context, '/bookmarks'),
                   ),
                 ],
               ),

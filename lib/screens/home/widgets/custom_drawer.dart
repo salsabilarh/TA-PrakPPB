@@ -14,7 +14,7 @@ class _CustomDrawer extends StatelessWidget {
       width: width * 0.835,
       height: height,
       child: Material(
-        color: const Color.fromARGB(255, 219, 217, 217),
+        color: Colors.white,
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(8.0),
