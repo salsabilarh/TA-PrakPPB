@@ -36,8 +36,7 @@ class _JuzIndexScreenState extends State<JuzIndexScreen> {
         appBar: AppBar(
           backgroundColor: Colors.white, // Warna latar belakang app bar
           leading: IconButton(
-            icon: Icon(Icons.arrow_back,
-                color: Colors.black), // Ikon tombol kembali
+            icon: Icon(Icons.arrow_back, color: Colors.black),
             onPressed: () {
               Navigator.of(context)
                   .pop(); // Fungsi kembali ke halaman sebelumnya
