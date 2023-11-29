@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-// import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -100,9 +100,9 @@ class Profile extends StatelessWidget {
                       width: 10,
                     ),
                     GestureDetector(
-                      // onTap: () {
-                      //   launchURL('https://github.com/SalsabilaRafifah');
-                      // },
+                      onTap: () {
+                        launchURL('https://github.com/SalsabilaRafifah');
+                      },
                       child: const Text('@SalsabilaRafifah'),
                     )
                   ],
@@ -142,9 +142,9 @@ class Profile extends StatelessWidget {
                       width: 10,
                     ),
                     GestureDetector(
-                      // onTap: () {
-                      //   launchURL('https://t.me/rafhannn');
-                      // },
+                      onTap: () {
+                        launchURL('https://t.me/rafhannn');
+                      },
                       child: const Text('@rafhannn'),
                     ),
                   ],
@@ -184,9 +184,9 @@ class Profile extends StatelessWidget {
                       width: 10,
                     ),
                     GestureDetector(
-                      // onTap: () {
-                      //   launchURL('instagram.com/salsbilarh_');
-                      // },
+                      onTap: () {
+                        launchURL('https://www.instagram.com/salsbilarh_');
+                      },
                       child: const Text('@salsbilarh_'),
                     ),
                   ],
@@ -226,10 +226,10 @@ class Profile extends StatelessWidget {
                       width: 10,
                     ),
                     GestureDetector(
-                      // onTap: () {
-                      //   launchURL(
-                      //       'https://www.linkedin.com/in/salsabila-rafifah-handifa-2a6b4a223');
-                      // },
+                      onTap: () {
+                        launchURL(
+                            'https://www.linkedin.com/in/salsabila-rafifah-handifa-2a6b4a223');
+                      },
                       child: const Text('Salsabila Rafifah Handifa'),
                     ),
                   ],
@@ -243,12 +243,12 @@ class Profile extends StatelessWidget {
   }
 }
 
-// void launchURL(String url) async {
-//   // ignore: deprecated_member_use
-//   if (await canLaunch(url)) {
-//     // ignore: deprecated_member_use
-//     await launch(url);
-//   } else {
-//     throw 'Tidak dapat membuka URL: $url';
-//   }
-// }
+void launchURL(String url) async {
+  // ignore: deprecated_member_use
+  if (await canLaunch(url)) {
+    // ignore: deprecated_member_use
+    await launch(url);
+  } else {
+    throw 'Tidak dapat membuka URL: $url';
+  }
+}
